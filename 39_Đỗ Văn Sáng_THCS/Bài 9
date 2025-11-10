@@ -1,0 +1,12 @@
+so_kwh = float(input("Nhập số kWh điện đã tiêu thụ:"))
+bac1 = 1678
+bac2 = 1734
+bac3 = 2014
+if so_kwh <= 100:
+    tien = so_kwh * bac1
+else:
+    if so_kwh <= 200:
+        tien = 100 * bac1 + (so_kwh - 100) * bac2
+    else:
+        tien = 100 * bac1 + 100 * bac2 + (so_kwh - 200) * bac3
+print("Tổng tiền điện phải trả:", tien, "VNĐ")

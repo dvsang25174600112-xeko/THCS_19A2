@@ -1,0 +1,4 @@
+tien_vnd = float(input("Nhập số tiền (VNĐ): "))
+ty_gia = 24500
+tien_usd = tien_vnd / ty_gia
+print("Số tiền quy đổi sang USD là:", round(tien_usd, 2))

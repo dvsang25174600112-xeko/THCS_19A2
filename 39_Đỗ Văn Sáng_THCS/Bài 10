@@ -1,0 +1,10 @@
+luong_cb = float(input("Nhập mức lương cơ bản: "))
+so_ngay_cong = float(input("Nhập số ngày công: "))
+luong_1ngay = luong_cb / 22
+tong_luong = luong_1ngay * so_ngay_cong
+if so_ngay_cong > 22:
+    tong_luong = tong_luong + (tong_luong * 0.1) 
+else:
+    if so_ngay_cong < 22:
+        tong_luong= tong_luong - (tong_luong * 0.05)  
+print("Tổng tiền lương thực nhận:", tong_luong)
